@@ -1,0 +1,52 @@
+{
+"parking" : [
+{
+"Parking name" : "Dzyatlovo",
+"Place number" : "2",
+"Located car number" : "",
+"Place id" : "235235",
+"Current user" : ""
+
+},
+{
+"Parking name" : "Vileyka",
+"Place number" : "1",
+"Located car number" : "",
+"Place id" : "13463",
+"Current user" : ""
+
+},
+{
+"Parking name" : "Dzyatlovo",
+"Place number" : "3",
+"Located car number" : "",
+"Place id" : "32452",
+"Current user" : ""
+
+},
+{
+"Parking name" : "Vileyka",
+"Place number" : "2",
+"Located car number" : "",
+"Place id" : "23463",
+"Current user" : ""
+
+},
+{
+"Parking name" : "Dzyatlovo",
+"Place number" : "1",
+"Located car number" : "",
+"Place id" : "22452",
+"Current user" : ""
+
+},
+{
+"Parking name" : "Vileyka",
+"Place number" : "3",
+"Located car number" : "",
+"Place id" : "32458",
+"Current user" : ""
+
+}
+]
+}
