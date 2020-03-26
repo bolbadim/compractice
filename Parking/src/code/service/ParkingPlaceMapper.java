@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package code.service;
 
 import code.dao.ParkingPlaceEntity;
@@ -14,3 +15,21 @@ public class ParkingPlaceMapper {
         return new ParkingPlace(parkingName, placeNumber, locatedCarNumber, id, currentUser);
     }
 }
+=======
+package code.service;
+
+import code.dao.ParkingPlaceEntity;
+import code.domain.ParkingPlace;
+
+public class ParkingPlaceMapper {
+
+    public ParkingPlace mapToParkingPlace(ParkingPlaceEntity parkingPlaceEntity) throws Exception {
+        String parkingName = parkingPlaceEntity.getParkingName();
+        String placeNumber = parkingPlaceEntity.getPlaceNumber();
+        String locatedCarNumber = parkingPlaceEntity.getLocatedCarNumber();
+        String id = parkingPlaceEntity.getId();
+        String currentUser = parkingPlaceEntity.getCurrentUser();
+        return new ParkingPlace(parkingName, placeNumber, locatedCarNumber, id, currentUser);
+    }
+}
+>>>>>>> d305a227df5d2b5b2393570a095528e85b9c0d3d
