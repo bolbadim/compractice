@@ -6,7 +6,7 @@ import code.service.UserService;
 
 import code.domain.User;
 import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.core.Logger;
+import org.apache.logging.log4j.Logger;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -16,7 +16,7 @@ public class Console {
 
     static final Scanner sc = new Scanner(System.in);
 
-    static Logger logger = (Logger) LogManager.getLogger();
+    private static final Logger logger = LogManager.getLogger();
 
     public static void main(String[] args) throws Exception {
         Console console = new Console();
@@ -24,6 +24,7 @@ public class Console {
     }
 
     public void menu() throws Exception {
+        logger.info("Starting program");
         String menu = "\"Menu\""
                 + "\n------\n"
                 + "1. Show all parking places;\n"
@@ -58,7 +59,6 @@ public class Console {
             System.out.print("Showing all parking places\n");
             ParkingService parkingService = new ParkingService();
             ArrayList<String> parkingList = parkingService.getParkingStrings();
-            //System.out.print("\nUsers:\n------\n\n");
             for (int i = 0; i < parkingList.size(); i++) {
                 System.out.println((i + 1) + ". " + parkingList.get(i));
             }
@@ -122,7 +122,6 @@ public class Console {
         int choose;
         while (!sc.hasNextInt() || (choose = sc.nextInt()) < 1 || choose > 2){ //check for proper input
             wrongInput();
-            System.out.print(">> ");
         }
 
         User login = new User();
@@ -144,7 +143,6 @@ public class Console {
                     int choose1;
                     while (!sc.hasNextInt() || (choose1 = sc.nextInt()) < 1 || choose1 > 2) { //check for proper input
                         wrongInput();
-                        System.out.print(">> ");
                     }
                     if (choose1 == 2) {
                         login = registration(login, usersList, users);
@@ -194,7 +192,6 @@ public class Console {
         int choose;
         while (!sc.hasNextInt() || (choose = sc.nextInt()) < 1 || choose > 5) { //check for proper input
             wrongInput();
-            System.out.print(">> ");
         }
         switch (choose){
             case 1:
@@ -248,7 +245,8 @@ public class Console {
                         inSystemWork(parkingService.RemoveCar(login,carNumber1));
                     }
                 }
-                    inSystemWork(login);
+                System.out.print("Wrong number of car, try again\n");
+                inSystemWork(login);
                 break;
             case 4:
                 System.out.print("Your cars :\n");

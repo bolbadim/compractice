@@ -29,8 +29,6 @@ public class ParkingRepository implements GenericDAO<String, ParkingEntity> {
             String name = object.get("name").toString();
             JSONArray placesArray = (JSONArray) object.get("parking_places");
 
-         //   System.out.print(placesArray);
-
             ParkingPlaceEntity[] parkingPlaces = new ParkingPlaceEntity[placesArray.size()];
 
             for (int j=0; j<placesArray.size(); j++) {

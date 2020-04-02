@@ -1,0 +1,15 @@
+02:29:11 [main] INFO  run.Main - Hello user
+02:29:11 [main] DEBUG stream.StreamController - Item={name='Красавец', price=600, count=3, stores=[StoreName', ]}
+02:29:11 [main] DEBUG stream.StreamController - Item={name='JS', price=600, count=5, stores=[StoreName', StoreName2', ]}
+02:29:11 [main] INFO  run.Main - time without p: 3263800
+02:29:11 [main] DEBUG stream.StreamController - Item={name='Красавец', price=600, count=3, stores=[StoreName', ]}
+02:29:11 [main] DEBUG stream.StreamController - Item={name='JS', price=600, count=5, stores=[StoreName', StoreName2', ]}
+02:29:11 [main] INFO  run.Main - time with p: 891600
+02:29:11 [main] DEBUG stream.StreamController - Item={name='Красавец', price=600, count=3, stores=[StoreName', ]}
+02:29:11 [main] DEBUG stream.StreamController - Item={name='Java lang ed.1', price=400, count=1, stores=[StoreName2', ]}
+02:29:11 [main] INFO  run.Main - time without p: 6342600
+02:29:11 [main] INFO  run.Main - time with p: 1100600
+02:29:11 [main] DEBUG stream.StreamController - [Store={name='StoreName', feedbackList=null, items=['Красавец', JS', ]}]
+02:29:11 [main] DEBUG stream.StreamController - [Store={name='StoreName', feedbackList=null, items=['Красавец', JS', ]}, Store={name='StoreName2', feedbackList=null, items=['JS', Java lang ed.1', ]}]
+02:29:11 [main] DEBUG stream.StreamController - [Store={name='StoreName2', feedbackList=null, items=['JS', Java lang ed.1', ]}]
+02:29:11 [main] DEBUG stream.StreamController - []
