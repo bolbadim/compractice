@@ -15,7 +15,6 @@ import code.service.impl.ParkingServiceImpl;
 import code.service.impl.UserServiceImpl;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import com.microsoft.sqlserver.jdbc.SQLServerDriver;
 
 
 import java.io.IOException;

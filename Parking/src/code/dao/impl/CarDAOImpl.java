@@ -20,7 +20,7 @@ public class CarDAOImpl implements CarDAO {
         try {
             this.connection = databaseUtil.getConnection();
         }
-        catch (SQLException e){
+        catch (SQLException | ClassNotFoundException e){
             logger.error(e.toString());
             DB.connectionFailed();
         }

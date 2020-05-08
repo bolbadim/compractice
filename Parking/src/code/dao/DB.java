@@ -19,7 +19,8 @@ public class DB {
         this.database = database;
     }
 
-    public Connection getConnection() throws SQLException {
+    public Connection getConnection() throws SQLException, ClassNotFoundException {
+        Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
         String url = "jdbc:sqlserver://localhost:1433;";
         String user = "user=admin;";
         String password = "password=admin;";

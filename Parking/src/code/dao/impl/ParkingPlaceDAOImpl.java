@@ -22,7 +22,7 @@ public class ParkingPlaceDAOImpl implements ParkingPlaceDAO {
             this.connection = databaseUtil.getConnection();
             this.database = databaseUtil.getDatabase();
         }
-        catch (SQLException e){
+        catch (SQLException | ClassNotFoundException e){
             logger.error(e.toString());
             DB.connectionFailed();
         }
